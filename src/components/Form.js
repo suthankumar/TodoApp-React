@@ -5,7 +5,11 @@ const Form=({setInputText, setList, list, inputText, setStatus})=>{
     };
     const sumbit =(e) =>{
         e.preventDefault();
-        setList([...list, {text: inputText, completed:false, id: Math.random() }])
+        if (inputText !== ""){
+          setList([...list, {text: inputText, completed:false, id: Math.random() }])
+        } else{
+            alert("Please enter the new task in the textfield to add")
+        }
     };
     const statusHandler =(e) =>{
         console.log(e.target.value)

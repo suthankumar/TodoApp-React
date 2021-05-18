@@ -15,7 +15,7 @@ header {
 
 header,
 form {
-  min-height: 20vh;
+  min-height: 14vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -47,7 +47,14 @@ form button:hover {
   min-width: 30%;
   list-style: none;
 }
+.container {
+  display: flex;
+  justify-content: center;
+}
 
+.text{
+  color: #03045e;
+}
 .todo {
   margin: 0.5rem;
   background: white;

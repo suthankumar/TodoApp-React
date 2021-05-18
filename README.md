@@ -1,5 +1,6 @@
 Simple Todo app ehich is used to manage your every day task. 
 
+![alt text](https://github.com/suthankumar/TodoApp-React/blob/main/screenshot.PNG?raw=true)
 ## Available Scripts
 
 In the project directory, you can run:

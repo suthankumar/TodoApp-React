@@ -16,7 +16,6 @@ function App() {
   
   //User effect, it run everytime it start and everytime anychanegs happen to list, status
   useEffect(()=>{
-    console.log("hey");
     filterHandler();
     saveList();
   },[list, status])
@@ -41,7 +40,7 @@ function App() {
       localStorage.setItem('todos', JSON.stringify(list));
   };
 
-  //store into Local storage
+  //Get data from Local storage
   const getList =()=>{
     if(localStorage.getItem('todos')=== null){
       localStorage.setItem('todos', JSON.stringify([]));
@@ -54,9 +53,11 @@ function App() {
 
   return (
     <div className="App">
-       <header>
-  <h1>Sutharshan's Todo List</h1>
+     <header>
+          <h1>Sutharshan's Todo List</h1>
     </header>
+    <div className="container">
+      <p className="text">Add your new task here</p></div>
     <Form inputText={inputText}list={list} setList={setList} setInputText = {setInputText}
     status= {status} setStatus={setStatus} />
     <Todolist filteredList= {filteredList} list= {list} setList={setList} />
